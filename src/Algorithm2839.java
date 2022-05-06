@@ -4,7 +4,6 @@ public class Algorithm2839 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int kg = sc.nextInt();
-        int count = 0;
         int result1 = 0;
         int result2 = 0;
         int result3 = 0;
@@ -37,7 +36,7 @@ public class Algorithm2839 {
             result3 += tmp/3 ;
         }
 
-        //합쳐서 나누는 경우
+        //3을 나누고 5를 나누는 방법
         tmp = kg;
         for(int i=tmp/3; i > 0; i--){
             tmp = tmp % (3*i);
@@ -55,6 +54,7 @@ public class Algorithm2839 {
             result4 = -1;
         }
 
+        //5를 나누고 3을 나누는 방법
         tmp = kg;
         for(int i=tmp/5; i >0 ; i--){
             tmp = tmp % (5*i);
